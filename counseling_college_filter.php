@@ -1,0 +1,82 @@
+<?php
+include_once("connections/connection.php");
+$con = connection();
+
+$sql = "SELECT * FROM college_list ORDER BY name ASC";
+$appointment = $con->query($sql) or die($con->error);
+$row = $appointment->fetch_assoc();
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BukSU Guidance Office | Counseling Appointment</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icons8-user-64.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/feathericon.min.css">
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body id="formcounseling">
+    <div class="main-wrapper login-body">
+        <div class="login-wrapper">
+            <div class="container">
+                <div class="loginbox">
+                    <?php
+                    if (isset($_POST['counseling'])) {
+                    ?>
+                        <div class="login-left">
+                            <img class="img-fluid" src="assets/img/R.png" alt="Logo">
+                        </div>
+                        <div class="login-right">
+                            <div class="login-right-wrap">
+                                <form action="add_counseling.php" method="post">
+                                    <div class="form-floating mb-3">
+                                        <label for=""> Select Your College/Program First</label>
+                                        <select name="college_of" class="form-control" type="text" required>
+                                            <option value=""></option>
+                                            <?php
+                                            do {
+                                                if ($row != null) {
+                                            ?>
+                                                    <option><?php echo $row['name'] ?></option>
+                                            <?php
+                                                }
+                                            } while ($row = $appointment->fetch_assoc()) ?>
+                                        </select><br>
+                                        <button type="submit" name="add_counseling" class="btn btn-success btn-block"> Next</button><br>
+                                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.php" aria-expanded="false">
+                                        <i class="fa fa-home" style="color: blue;"></i>
+                                        <span class="hide-menu"><b>Back</b></span>
+                                    </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

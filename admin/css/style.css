@@ -1,0 +1,224 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.login-container{
+    font-family: "Arial";
+    margin: 0 auto;
+    width: 50%;
+    
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-top: 8vh;
+    
+    border-radius: 16px;
+    box-shadow: 5px 6px 18px #888888;
+    height: auto;
+    
+}
+.form-element{
+    
+    font-family: "Arial";
+    margin: 0 auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 12px;
+    /* background-color: rgb(96, 240, 240); */
+    /* border: 1px solid rgb(10, 10, 10); */
+    box-shadow: 5px 6px 18px #fd3e3e;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+    margin-top: 8vh;
+}
+.form-element:hover{
+    background-color: rgb(218, 91, 91);
+}
+.form-element label{
+    display: block;
+    font-size: 22px;
+    margin-top: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.form-element input{
+    font-size: 22px;
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    /* color: rgb(79, 216, 170); */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.form-element textarea{
+    font-size: 22px;
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    /* color: rgb(79, 216, 170); */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.form-element select{
+    font-size: 22px;
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    /* color: rgb(79, 216, 170); */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.form-group button{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    letter-spacing: 6px;
+    border-radius: 20px;
+    /* font-size: 32px; */
+    cursor: pointer;
+    background-color: rgb(55, 65, 250);
+    border: none;
+    font-weight: bold;
+    
+}
+.login-container button:hover{
+
+    background-color: rgb(102, 250, 96);
+}
+#formlogin{
+    background-image: linear-gradient(90deg, rgb(193, 193, 193),rgb(107, 107, 107)),linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%),linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%); background-blend-mode:overlay,overlay,normal;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    
+
+}
+.login-container h2{
+    font-weight: bold;
+}
+.message{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+.message.warning{
+    background: rgb(240, 89, 89);
+    color: #fdfdfa;
+    text-align: center;
+}
+.message.success{
+    
+    
+    color: rgb(17, 1, 1);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.wrapper{
+    width: 70%;
+    text-align: center;
+}
+
+/* formdetailcounsel */
+#formdetailcounsel{
+    background-image: linear-gradient(90deg, rgb(193, 193, 193),rgb(107, 107, 107)),linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%),linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%); background-blend-mode:overlay,overlay,normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+/* entry point */
+#formindex{
+    background-image: linear-gradient(90deg, rgb(193, 193, 193),rgb(107, 107, 107)),linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%),linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%); background-blend-mode:overlay,overlay,normal;
+    
+    background-size: cover;
+    
+
+}
+
+/* add counseling apointment */
+#formcounseling{
+    background-image: linear-gradient(90deg, rgb(193, 193, 193),rgb(107, 107, 107)),linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%),linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%); background-blend-mode:overlay,overlay,normal;
+    
+    background-size: cover;
+    
+
+}
+
+/* add referral apointment */
+#formreferral{
+    background-image: linear-gradient(90deg, rgb(193, 193, 193),rgb(107, 107, 107)),linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%),linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%); background-blend-mode:overlay,overlay,normal;
+    
+    background-size: cover;
+    
+
+}
+
+/* add testing apointment */
+#formtesting{
+    background-image: linear-gradient(90deg, rgb(193, 193, 193),rgb(107, 107, 107)),linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%),linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%); background-blend-mode:overlay,overlay,normal;
+    
+    background-size: cover;
+    
+
+}
+
+/* add exit-interview apointment */
+#formexit{
+    background-image: linear-gradient(90deg, rgb(193, 193, 193),rgb(107, 107, 107)),linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%),linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%); background-blend-mode:overlay,overlay,normal;
+   
+    background-size: cover;
+    
+
+}
+
+/* admin dashboard */
+#formadmin{
+    background-image: linear-gradient(90deg, rgb(193, 193, 193),rgb(107, 107, 107)),linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%),linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%,rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%,rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%,rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%,rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%,rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%); background-blend-mode:overlay,overlay,normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+
+table{
+    border: 1px solid black;
+    /* border: 1px solid rgb(167, 54, 34); */
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+	margin: 0;
+    
+}
+h2{
+    text-align: center;
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid black;
+}
+tr:nth-child(add){
+    background-color: #3567f1;
+}
